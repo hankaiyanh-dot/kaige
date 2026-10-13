@@ -1,30 +1,35 @@
-# 星云防线：超新星（Nebula Defense v2.0）
+# 星云防线 · NEBULA DEFENSE (v2.0)
 
-一款 **零依赖、开源、移动端与桌面端兼容** 的科幻纵版射击游戏。使用 HTML5 Canvas、原生 JavaScript 与 Web Audio API，下载 `index.html` 后离线即可游玩。
+轻量、零依赖的 HTML5 Canvas 太空射击游戏。手机和桌面浏览器均可运行，单个 `index.html` 无需联网。
 
-## 运行
+## 立即游玩
 
-- 在线（GitHub Pages 已部署的情况下）：https://hankaiyanh-dot.github.io/kaige/games/nebula-defense/
-- 离线：直接在 Chrome、Edge 或其他现代浏览器打开 `index.html`。
+- 源码： https://github.com/hankaiyanh-dot/kaige/tree/main/games/nebula-defense
+- GitHub Pages（若仓库已启用 Pages）： https://hankaiyanh-dot.github.io/kaige/games/nebula-defense/
+- 离线：下载 `index.html` 并在现代浏览器中打开。
 
-## 玩法
+## 操作
 
-- 手机：在画布上拖动战机；点击「💨 冲刺」闪避；充能后点击「⚡ 等离子脉冲」清屏。
-- 电脑：WASD 或方向键移动，Q 冲刺，空格 / Shift 脉冲，P / Esc 暂停。
-- 自动射击、多种敌机与精英敌机、周期性旗舰 Boss、武器升级与限时道具。
-- 连续击杀积累连击，最高 5 倍积分；本地浏览器记录最高分。
+- 手机：触摸画布拖动战机；等离子脉冲蓄满点击右下方按钮；双击画布也可触发。
+- 电脑：方向键/WASD 移动，空格/Shift 释放脉冲，P/Esc 暂停。
 
-## 技术说明
+## v2.0 内容
 
-- 不使用第三方 CDN、字体或素材，不上传用户数据。
-- 音效由 Web Audio API 实时合成，并非 Spotify 音轨；不需要 Spotify 登录或音乐许可。
-- 游戏逻辑按 `requestAnimationFrame` 的时间差推进；页面失去焦点时自动暂停。
-- 最高分仅储存在当前浏览器 `localStorage` 中；无账号同步。
+- 自动射击与三段武器升级，最多两个辅助僚机
+- 普通敌人、精英敌机与周期性旗舰 Boss
+- 连击积分倍率（最高 ×5）、波次、生存时间和最高分
+- 回血、护盾、极速射击、能量、僚机、磁吸战利品
+- 动态星云背景、粒子爆炸、震屏与 Web Audio API 合成音效
+- 自动暂停、触屏与键盘支持；本地最高分记录
+
+## 技术与隐私
+
+原生 JavaScript + HTML5 Canvas + CSS。无第三方库、外链依赖、广告、分析 SDK 和网络请求；最高分保存在浏览器 localStorage。声音由代码实时合成，未使用 Spotify 商业音乐。
 
 ## 开源
 
-本目录代码使用 MIT License 开源，允许修改和再发行，请保留版权与许可声明。欢迎提 Issue 或 Pull Request。
+本游戏目录以 MIT License 开源，详见 [LICENSE](LICENSE)。欢迎提交 Issue / PR。
 
 ## 已知限制
 
-游戏是轻量街机作品，没有服务端排行榜、云存档或多人联网。浏览器兼容性与手机性能存在差异，建议使用现代 Chromium 浏览器。
+无云存档、账号、联网排行榜。GitHub Pages 的公开地址是否可访问取决于仓库 Pages 配置。建议在 Chrome / Edge 浏览器运行。
